@@ -1,0 +1,13 @@
+#!/bin/sh
+
+sucklessdir="$HOME/.local/src/"
+
+cd $sucklessdir
+
+for dir in dwm dmenu slstatus st
+do
+    cd $dir
+    make
+    sudo make clean install && clear
+    echo "Done with $dir"; cd $sucklessdir; sleep 1
+done
