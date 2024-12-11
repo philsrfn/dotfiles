@@ -4,19 +4,19 @@
 
 /* appearance */
 static const unsigned int borderpx  = 3;        /* border pixel of windows */
-static const unsigned int gappx     = 5;
+static const unsigned int gappx     = 2;
 static const unsigned int snap      = 1;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
-static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "JetBrainsMono NFM" };
-static const char dmenufont[]       = "JetBrainsMono NFM";
+static const int topbar             = 0;        /* 0 means bottom bar */
+static const char *fonts[]          = { "Terminess Nerd Font" };
+static const char dmenufont[]       = "Terminess Nerd Font ";
 static const char col_gray1[]       = "#292a37";
 static const char col_gray2[]       = "#292a37";
 static const char col_gray3[]       = "#9699b7";
 static const char col_gray4[]       = "#d9e0ee";
 static const char col_cyan[]        = "#393a4d";
 static const unsigned int baralpha = 0xd0;
-static const unsigned int borderalpha = 0.4;
+static const unsigned int borderalpha = 0.8;
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },

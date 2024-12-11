@@ -9,11 +9,12 @@ alias vim="nvim"
 eval $(thefuck --alias)
 
 # directories
-alias src="cd ~/.local/src"
+alias src="cd ~/dotfiles/suckless"
 alias prg="cd ~/studium/Semester1/Programmieren\ 1/"
 alias alg="cd ~/studium/Semester1/ALG/"
 alias gdi="cd ~/studium/Semester1/GDI/"
 alias dev="cd ~/Developer"
+alias dot="cd ~/dotfiles/"
 
 # useful
 alias ..='cd ..'

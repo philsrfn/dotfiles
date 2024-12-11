@@ -5,11 +5,11 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "JetBrainsMono NFM:pixelsize=14:antialias=true:autohint=true";
+static char *font = "Terminess Nerd Font:pixelsize=18";
 static int borderpx = 16;
 
 static char *font2[] = {
-    "JetBrainsMono NFM:pixelsize=14:antialias=true:autohint=true",
+    "Terminess Nerd Font Mono:pixelsize=14:antialias=true:autohint=true",
 };
 
 /*

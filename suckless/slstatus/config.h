@@ -67,6 +67,6 @@ static const struct arg args[] = {
   { disk_free,    "[ %s] ", "/"},
 	{ cpu_perc,     "[  %s%%] ", NULL },
 	{ ram_perc,     "[  %s%%] ", NULL },
-	{ battery_perc, "[ %s%%] ", "BAT0" },
+	{ run_command, "[ %s%%] ", "echo $(($(($(cat /sys/class/power_supply/BAT0/capacity)+$(cat /sys/class/power_supply/BAT1/capacity)))/2))" },
 	{ datetime, "%s ",           "%a %d.%m.%y %R" }
 };
