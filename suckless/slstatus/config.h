@@ -64,9 +64,9 @@ static const char unknown_str[] = "n/a";
 static const struct arg args[] = {
 	{ username,     "{%s",   NULL},
   { hostname,      "@%s} ", NULL },
-  { disk_free,    "[ %s] ", "/"},
+  { disk_free,    "[  %s] ", "/"},
 	{ cpu_perc,     "[  %s%%] ", NULL },
 	{ ram_perc,     "[  %s%%] ", NULL },
-	{ run_command, "[ %s%%] ", "echo $(($(($(cat /sys/class/power_supply/BAT0/capacity)+$(cat /sys/class/power_supply/BAT1/capacity)))/2))" },
+	{ run_command, "[  %s%%] ", "echo $(($(($(cat /sys/class/power_supply/BAT0/capacity)+$(cat /sys/class/power_supply/BAT1/capacity)))/2))" },
 	{ datetime, "%s ",           "%a %d.%m.%y %R" }
 };
