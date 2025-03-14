@@ -1,0 +1,7 @@
+Host philhrtm.xyz
+  HostName philhrtm.xyz
+  User linux
+
+Host jumper
+  HostName jumper
+  User ph

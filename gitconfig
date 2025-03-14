@@ -1,3 +1,25 @@
+# This is Git's per-user configuration file.
 [user]
+# Please adapt and uncomment the following lines:
+	name = Phil Hartmann
 	email = philerichartmann@gmail.com
-	name = Phil
+[pull]
+	rebase = false
+
+[color]
+    ui = auto  # Enable colored output for better readability
+
+[alias]
+    st = status
+    ci = commit
+    co = checkout
+    br = branch
+    hist = log --pretty=format:'%C(yellow)%h%Creset %ad | %s%C(red)%d%Creset [%Cgreen%an%Creset]' --graph --date=short
+    lg = log --oneline --graph --decorate --all
+    amend = commit --amend --no-edit
+    unstage = reset HEAD --
+    last = log -1 HEAD
+  [push]
+    default = current  # Push only the current branch, prevents accidental mass-push
+[init]
+    defaultBranch = main
