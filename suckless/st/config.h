@@ -5,11 +5,11 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Terminess Nerd Font:pixelsize=18";
+static char *font = "Fira Code:pixelsize=16";
 static int borderpx = 16;
 
 static char *font2[] = {
-    "Terminess Nerd Font Mono:pixelsize=14:antialias=true:autohint=true",
+    "Fira Code Nerd Font Mono:pixelsize=14:antialias=true:autohint=true",
 };
 
 /*

@@ -8,8 +8,8 @@ static const unsigned int gappx     = 2;
 static const unsigned int snap      = 1;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 0;        /* 0 means bottom bar */
-static const char *fonts[]          = { "Terminess Nerd Font" };
-static const char dmenufont[]       = "Terminess Nerd Font ";
+static const char *fonts[]          = { "Fira Code Nerd Font" };
+static const char dmenufont[]       = "Fira Code Nerd Font";
 static const char col_gray1[]       = "#292a37";
 static const char col_gray2[]       = "#292a37";
 static const char col_gray3[]       = "#9699b7";
@@ -33,7 +33,7 @@ static const unsigned int alphas[][3]      = {
 static const char *tags[] = { "term", "web", "code", "watch", "doc", "dwl", "music" };
 
 static const Rule rules[] = {
-    { "firefox", NULL, NULL, 2, 0, -1 },
+    { "chromium", NULL, NULL, 2, 0, -1 },
 };
 
 /* layout(s) */

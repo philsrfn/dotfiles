@@ -39,7 +39,7 @@ require('peek').setup({
   syntax = true,            -- enable syntax highlighting, affects performance
   theme = 'dark',           -- 'dark' or 'light'
   update_on_change = true,
-  app = 'firefox',          -- 'webview', 'browser', string or a table of strings
+  app = { 'firefox', '--new-window' },
   filetype = { 'markdown' },-- list of filetypes to recognize as markdown
   throttle_at = 200000,     -- start throttling when file exceeds this
   throttle_time = 'auto',   -- minimum amount of time in milliseconds

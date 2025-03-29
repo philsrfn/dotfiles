@@ -1,8 +1,9 @@
 export ZSH="$HOME/.oh-my-zsh"
-ZSH_THEME="daveverwer"
+export ZSH_COMPDUMP=$ZSH/cache/.zcompdump-$HOST
+
+ZSH_THEME="clean"
 
 plugins=(git)
-
 source $ZSH/oh-my-zsh.sh
 
 alias vim="nvim"
@@ -10,9 +11,9 @@ eval $(thefuck --alias)
 
 # directories
 alias src="cd ~/dotfiles/suckless"
-alias prg="cd ~/studium/Semester1/Programmieren\ 1/"
-alias alg="cd ~/studium/Semester1/ALG/"
-alias gdi="cd ~/studium/Semester1/GDI/"
+alias prg="cd ~/Documents/studium/Semester1/Programmieren\ 1/"
+alias alg="cd ~/Documents/studium/Semester1/ALG/"
+alias gdi="cd ~/Documents/studium/Semester1/GDI/"
 alias dev="cd ~/Developer"
 alias dot="cd ~/dotfiles/"
 
@@ -42,3 +43,10 @@ alias reboot='sudo /sbin/reboot'
 alias poweroff='sudo /sbin/poweroff'
 alias halt='sudo /sbin/halt'
 alias shutdown='sudo /sbin/shutdown'
+
+chc() {
+  wc -m $1 | awk '{print $1}'
+}
+
+
+export PATH="$HOME/.local/bin/:$PATH"
